@@ -21,7 +21,7 @@
       const text = log.map(e => `[${new Date(e.t).toISOString().slice(11,19)}] ${e.m} ${e.d !== undefined ? JSON.stringify(e.d) : ''}`).join('\n');
       const a = document.createElement('a');
       a.href = URL.createObjectURL(new Blob([text], {type: 'text/plain'}));
-      a.download = 'colab-autodisconnect-logs.txt';
+      a.download = 'colab-autodisconnect-logs.log';
       document.body.appendChild(a); a.click(); a.remove();
       URL.revokeObjectURL(a.href);
     };
