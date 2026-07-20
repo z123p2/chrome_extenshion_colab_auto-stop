@@ -14,6 +14,11 @@
   }
   dialogWatcher();
 
+  const worker = new Worker(URL.createObjectURL(new Blob([
+    `setInterval(() => postMessage('tick'), 10000);`
+  ], { type: 'application/javascript' })));
+  worker.onmessage = () => doDisconnect();
+
   function getStatusBar() {
     return document.querySelector('colab-status-bar');
   }
