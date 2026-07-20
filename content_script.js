@@ -119,7 +119,7 @@
     }
 
     pendingDisconnect = true;
-    setTimeout(() => { pendingDisconnect = false; }, 60000);
+    setTimeout(() => { pendingDisconnect = false; }, 15000);
     l('doDisc_proceed');
 
     if (!clickRuntimeMenu()) { pendingDisconnect = false; return; }
