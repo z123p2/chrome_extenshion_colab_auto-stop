@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 340px;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      color: #222;
+      background: #fff;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .header h1 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .header .icon { font-size: 20px; }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    .toggle-row label { font-weight: 500; font-size: 13px; cursor: pointer; user-select: none; }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 36px;
+      height: 20px;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; cursor: pointer; inset: 0;
+      background: #ccc; border-radius: 20px; transition: .2s;
+    }
+    .slider:before {
+      content: "";
+      position: absolute; height: 14px; width: 14px;
+      left: 3px; bottom: 3px;
+      background: #fff; border-radius: 50%; transition: .2s;
+    }
+    .switch input:checked + .slider { background: #4caf50; }
+    .switch input:checked + .slider:before { transform: translateX(16px); }
+    .status-row {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      background: #f9f9f9;
+      border-radius: 6px;
+    }
+    .status-row span { display: flex; align-items: center; gap: 4px; }
+    .status-dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+    }
+    .status-dot.active { background: #4caf50; }
+    .status-dot.inactive { background: #ccc; }
+    .status-dot.error { background: #f44336; }
+    .divider { border: none; border-top: 1px solid #eee; margin: 10px 0; }
+    .log-area {
+      display: none;
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 8px;
+      padding: 6px;
+      background: #f9f9f9;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      font-size: 10px;
+      font-family: monospace;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .log-area.open { display: block; }
+    .log-time { color: #888; }
+    .log-btn-row {
+      display: none;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .log-btn-row.show { display: flex; }
+    .btn {
+      flex: 1;
+      padding: 6px;
+      border: none;
+      border-radius: 5px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: background .15s;
+      background: #e8e8e8;
+      color: #555;
+    }
+    .btn:hover { background: #ddd; }
+    .btn-primary {
+      background: #4a90d9;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #357abd; }
+    .note {
+      font-size: 11px;
+      color: #999;
+      margin-top: 12px;
+      line-height: 1.4;
+    }
+    .theme-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      padding: 6px 0;
+    }
+    .theme-row label { font-size: 11px; color: #888; white-space: nowrap; }
+    .theme-btn {
+      flex: 1;
+      padding: 4px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #fff;
+      color: #555;
+      font-size: 11px;
+      cursor: pointer;
+      transition: .15s;
+      text-align: center;
+    }
+    .theme-btn:hover { background: #f5f5f5; }
+    .theme-btn.active { background: #4a90d9; color: #fff; border-color: #4a90d9; }
+
+    .dark { color: #ddd; background: #1e1e1e; }
+    .dark .toggle-row { background: #2a2a2a; }
+    .dark .slider { background: #555; }
+    .dark .slider:before { background: #ccc; }
+    .dark .status-row { background: #2a2a2a; color: #999; }
+    .dark .status-dot.inactive { background: #555; }
+    .dark .divider { border-top-color: #333; }
+    .dark .btn { background: #333; color: #bbb; }
+    .dark .btn:hover { background: #444; }
+    .dark .log-area { background: #252525; border-color: #333; color: #bbb; }
+    .dark .log-time { color: #666; }
+    .dark .note { color: #666; }
+    .dark .theme-btn { background: #2a2a2a; border-color: #444; color: #999; }
+    .dark .theme-btn:hover { background: #333; }
+    .dark .theme-btn.active { background: #4a90d9; color: #fff; border-color: #4a90d9; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span class="icon">⏏</span>
+    <h1>Colab Auto-Disconnect</h1>
+  </div>
+
+  <div class="toggle-row">
+    <label for="enabled">Автоотключение</label>
+    <label class="switch">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="toggle-row">
+    <label for="loggingEnabled">Логирование</label>
+    <label class="switch">
+      <input type="checkbox" id="loggingEnabled">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="status-row">
+    <span>
+      <span class="status-dot inactive" id="statusDot"></span>
+      <span id="statusText">Нет данных</span>
+    </span>
+  </div>
+
+  <hr class="divider">
+
+  <div>
+    <button id="logBtn" class="btn btn-primary">📋 Логи</button>
+    <div id="logArea" class="log-area"></div>
+    <div id="logActions" class="log-btn-row">
+      <button id="copyLogsBtn" class="btn">📋 Копировать</button>
+      <button id="clearLogsBtn" class="btn">🗑 Очистить</button>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="theme-row">
+    <label>Тема:</label>
+    <button class="theme-btn" data-theme="system">Системная</button>
+    <button class="theme-btn" data-theme="dark">Тёмная</button>
+    <button class="theme-btn" data-theme="light">Светлая</button>
+  </div>
+
+  <div class="note">
+    Автоматически отключает среду выполнения Google Colab после завершения всех ячеек в активных и фоновых вкладках.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
