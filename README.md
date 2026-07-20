@@ -1,6 +1,6 @@
 # Colab Auto-Disconnect
 
-**English** | [Russian](README.ru.md)
+🌐 **English** | [Russian](README.ru.md)
 
 Chrome extension that automatically disconnects Google Colab runtime immediately after all cells finish executing, preventing background consumption of compute limits.
 

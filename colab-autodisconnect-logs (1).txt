@@ -1,0 +1,317 @@
+[14:10:17] dialogWatcherActive 
+[14:10:17] workerCreated 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] execObs_deferred 
+[14:10:17] init_firstCheck 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] isRunning_null 
+[14:10:17] doDisc_runningCheck {"running":null}
+[14:10:17] doDisc_skip_running 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:17] qStatusBar {"exists":false}
+[14:10:17] execObs_fail 
+[14:10:18] qStatusBar {"exists":false}
+[14:10:18] execObs_fail 
+[14:10:18] qStatusBar {"exists":false}
+[14:10:18] execObs_fail 
+[14:10:18] qStatusBar {"exists":false}
+[14:10:18] execObs_fail 
+[14:10:19] qStatusBar {"exists":true}
+[14:10:19] qExecStatus {"exists":false}
+[14:10:19] execObs_fail 
+[14:10:19] qStatusBar {"exists":true}
+[14:10:19] qExecStatus {"exists":true}
+[14:10:19] execObs_ok 
+[14:10:19] execObs_deferred_success 
+[14:10:27] workerTick 
+[14:10:27] qStatusBar {"exists":true}
+[14:10:27] qExecStatus {"exists":true}
+[14:10:27] isRunning {"spinner":false,"text":"","result":false}
+[14:10:27] doDisc_runningCheck {"running":false}
+[14:10:27] qConnectBtn {"exists":true}
+[14:10:27] isConnected {"sparkline":false,"result":false}
+[14:10:27] doDisc_connectedCheck {"connected":false}
+[14:10:27] doDisc_skip_disconnected 
+[14:10:37] workerTick 
+[14:10:37] qStatusBar {"exists":true}
+[14:10:37] qExecStatus {"exists":true}
+[14:10:37] isRunning {"spinner":false,"text":"","result":false}
+[14:10:37] doDisc_runningCheck {"running":false}
+[14:10:37] qConnectBtn {"exists":true}
+[14:10:37] isConnected {"sparkline":false,"result":false}
+[14:10:37] doDisc_connectedCheck {"connected":false}
+[14:10:37] doDisc_skip_disconnected 
+[14:10:44] execObs_fired {"types":"childList"}
+[14:10:44] qStatusBar {"exists":true}
+[14:10:44] qExecStatus {"exists":true}
+[14:10:44] isRunning {"spinner":true,"text":"\n    Выполнение (0 сек.)…\n      \n      ","result":true}
+[14:10:44] doDisc_runningCheck {"running":true}
+[14:10:44] doDisc_skip_running 
+[14:10:44] execObs_fired {"types":"attributes"}
+[14:10:44] qStatusBar {"exists":true}
+[14:10:44] qExecStatus {"exists":true}
+[14:10:44] isRunning {"spinner":true,"text":"\n    Выполнение (0 сек.)…\n      \n      ","result":true}
+[14:10:44] doDisc_runningCheck {"running":true}
+[14:10:44] doDisc_skip_running 
+[14:10:44] execObs_fired {"types":"attributes"}
+[14:10:44] qStatusBar {"exists":true}
+[14:10:44] qExecStatus {"exists":true}
+[14:10:44] isRunning {"spinner":true,"text":"\n    Выполнение (0 сек.)…\n      \n      ","result":true}
+[14:10:44] doDisc_runningCheck {"running":true}
+[14:10:44] doDisc_skip_running 
+[14:10:47] workerTick 
+[14:10:47] qStatusBar {"exists":true}
+[14:10:47] qExecStatus {"exists":true}
+[14:10:47] isRunning {"spinner":true,"text":"\n    Выполнение (2 сек.)…\n      \n      ","result":true}
+[14:10:47] doDisc_runningCheck {"running":true}
+[14:10:47] doDisc_skip_running 
+[14:10:52] execObs_fired {"types":"childList"}
+[14:10:52] qStatusBar {"exists":true}
+[14:10:52] qExecStatus {"exists":true}
+[14:10:52] isRunning {"spinner":false,"text":"","result":false}
+[14:10:52] doDisc_runningCheck {"running":false}
+[14:10:52] qConnectBtn {"exists":true}
+[14:10:52] isConnected {"sparkline":false,"result":false}
+[14:10:52] doDisc_connectedCheck {"connected":false}
+[14:10:52] doDisc_skip_disconnected 
+[14:10:52] execObs_fired {"types":"childList,attributes"}
+[14:10:52] qStatusBar {"exists":true}
+[14:10:52] qExecStatus {"exists":true}
+[14:10:52] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:10:52] doDisc_runningCheck {"running":false}
+[14:10:52] qConnectBtn {"exists":true}
+[14:10:52] isConnected {"sparkline":false,"result":false}
+[14:10:52] doDisc_connectedCheck {"connected":false}
+[14:10:52] doDisc_skip_disconnected 
+[14:10:52] execObs_fired {"types":"attributes"}
+[14:10:52] qStatusBar {"exists":true}
+[14:10:52] qExecStatus {"exists":true}
+[14:10:52] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:10:52] doDisc_runningCheck {"running":false}
+[14:10:52] qConnectBtn {"exists":true}
+[14:10:52] isConnected {"sparkline":false,"result":false}
+[14:10:52] doDisc_connectedCheck {"connected":false}
+[14:10:52] doDisc_skip_disconnected 
+[14:10:52] execObs_fired {"types":"attributes"}
+[14:10:52] qStatusBar {"exists":true}
+[14:10:52] qExecStatus {"exists":true}
+[14:10:52] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:10:52] doDisc_runningCheck {"running":false}
+[14:10:52] qConnectBtn {"exists":true}
+[14:10:52] isConnected {"sparkline":false,"result":false}
+[14:10:52] doDisc_connectedCheck {"connected":false}
+[14:10:52] doDisc_skip_disconnected 
+[14:10:57] workerTick 
+[14:10:57] qStatusBar {"exists":true}
+[14:10:57] qExecStatus {"exists":true}
+[14:10:57] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:10:57] doDisc_runningCheck {"running":false}
+[14:10:57] qConnectBtn {"exists":true}
+[14:10:57] isConnected {"sparkline":false,"result":false}
+[14:10:57] doDisc_connectedCheck {"connected":false}
+[14:10:57] doDisc_skip_disconnected 
+[14:11:07] workerTick 
+[14:11:07] qStatusBar {"exists":true}
+[14:11:07] qExecStatus {"exists":true}
+[14:11:07] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:07] doDisc_runningCheck {"running":false}
+[14:11:07] qConnectBtn {"exists":true}
+[14:11:07] isConnected {"sparkline":false,"result":false}
+[14:11:07] doDisc_connectedCheck {"connected":false}
+[14:11:07] doDisc_skip_disconnected 
+[14:11:17] workerTick 
+[14:11:17] qStatusBar {"exists":true}
+[14:11:17] qExecStatus {"exists":true}
+[14:11:17] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:17] doDisc_runningCheck {"running":false}
+[14:11:17] qConnectBtn {"exists":true}
+[14:11:17] isConnected {"sparkline":false,"result":false}
+[14:11:17] doDisc_connectedCheck {"connected":false}
+[14:11:17] doDisc_skip_disconnected 
+[14:11:27] workerTick 
+[14:11:27] qStatusBar {"exists":true}
+[14:11:27] qExecStatus {"exists":true}
+[14:11:27] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:27] doDisc_runningCheck {"running":false}
+[14:11:27] qConnectBtn {"exists":true}
+[14:11:27] isConnected {"sparkline":false,"result":false}
+[14:11:27] doDisc_connectedCheck {"connected":false}
+[14:11:27] doDisc_skip_disconnected 
+[14:11:37] workerTick 
+[14:11:37] qStatusBar {"exists":true}
+[14:11:37] qExecStatus {"exists":true}
+[14:11:37] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:37] doDisc_runningCheck {"running":false}
+[14:11:37] qConnectBtn {"exists":true}
+[14:11:37] isConnected {"sparkline":false,"result":false}
+[14:11:37] doDisc_connectedCheck {"connected":false}
+[14:11:37] doDisc_skip_disconnected 
+[14:11:47] workerTick 
+[14:11:47] qStatusBar {"exists":true}
+[14:11:47] qExecStatus {"exists":true}
+[14:11:47] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:47] doDisc_runningCheck {"running":false}
+[14:11:47] qConnectBtn {"exists":true}
+[14:11:47] isConnected {"sparkline":false,"result":false}
+[14:11:47] doDisc_connectedCheck {"connected":false}
+[14:11:47] doDisc_skip_disconnected 
+[14:11:57] workerTick 
+[14:11:57] qStatusBar {"exists":true}
+[14:11:57] qExecStatus {"exists":true}
+[14:11:57] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:11:57] doDisc_runningCheck {"running":false}
+[14:11:57] qConnectBtn {"exists":true}
+[14:11:57] isConnected {"sparkline":false,"result":false}
+[14:11:57] doDisc_connectedCheck {"connected":false}
+[14:11:57] doDisc_skip_disconnected 
+[14:12:07] workerTick 
+[14:12:07] qStatusBar {"exists":true}
+[14:12:07] qExecStatus {"exists":true}
+[14:12:07] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:07] doDisc_runningCheck {"running":false}
+[14:12:07] qConnectBtn {"exists":true}
+[14:12:07] isConnected {"sparkline":false,"result":false}
+[14:12:07] doDisc_connectedCheck {"connected":false}
+[14:12:07] doDisc_skip_disconnected 
+[14:12:17] workerTick 
+[14:12:17] qStatusBar {"exists":true}
+[14:12:17] qExecStatus {"exists":true}
+[14:12:17] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:17] doDisc_runningCheck {"running":false}
+[14:12:17] qConnectBtn {"exists":true}
+[14:12:17] isConnected {"sparkline":false,"result":false}
+[14:12:17] doDisc_connectedCheck {"connected":false}
+[14:12:17] doDisc_skip_disconnected 
+[14:12:27] workerTick 
+[14:12:27] qStatusBar {"exists":true}
+[14:12:27] qExecStatus {"exists":true}
+[14:12:27] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:27] doDisc_runningCheck {"running":false}
+[14:12:27] qConnectBtn {"exists":true}
+[14:12:27] isConnected {"sparkline":false,"result":false}
+[14:12:27] doDisc_connectedCheck {"connected":false}
+[14:12:27] doDisc_skip_disconnected 
+[14:12:37] workerTick 
+[14:12:37] qStatusBar {"exists":true}
+[14:12:37] qExecStatus {"exists":true}
+[14:12:37] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:37] doDisc_runningCheck {"running":false}
+[14:12:37] qConnectBtn {"exists":true}
+[14:12:37] isConnected {"sparkline":false,"result":false}
+[14:12:37] doDisc_connectedCheck {"connected":false}
+[14:12:37] doDisc_skip_disconnected 
+[14:12:47] workerTick 
+[14:12:47] qStatusBar {"exists":true}
+[14:12:47] qExecStatus {"exists":true}
+[14:12:47] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:47] doDisc_runningCheck {"running":false}
+[14:12:47] qConnectBtn {"exists":true}
+[14:12:47] isConnected {"sparkline":false,"result":false}
+[14:12:47] doDisc_connectedCheck {"connected":false}
+[14:12:47] doDisc_skip_disconnected 
+[14:12:57] workerTick 
+[14:12:57] qStatusBar {"exists":true}
+[14:12:57] qExecStatus {"exists":true}
+[14:12:57] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:12:57] doDisc_runningCheck {"running":false}
+[14:12:57] qConnectBtn {"exists":true}
+[14:12:57] isConnected {"sparkline":false,"result":false}
+[14:12:57] doDisc_connectedCheck {"connected":false}
+[14:12:57] doDisc_skip_disconnected 
+[14:13:07] workerTick 
+[14:13:07] qStatusBar {"exists":true}
+[14:13:07] qExecStatus {"exists":true}
+[14:13:07] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:07] doDisc_runningCheck {"running":false}
+[14:13:07] qConnectBtn {"exists":true}
+[14:13:07] isConnected {"sparkline":false,"result":false}
+[14:13:07] doDisc_connectedCheck {"connected":false}
+[14:13:07] doDisc_skip_disconnected 
+[14:13:17] workerTick 
+[14:13:17] qStatusBar {"exists":true}
+[14:13:17] qExecStatus {"exists":true}
+[14:13:17] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:17] doDisc_runningCheck {"running":false}
+[14:13:17] qConnectBtn {"exists":true}
+[14:13:17] isConnected {"sparkline":false,"result":false}
+[14:13:17] doDisc_connectedCheck {"connected":false}
+[14:13:17] doDisc_skip_disconnected 
+[14:13:27] workerTick 
+[14:13:27] qStatusBar {"exists":true}
+[14:13:27] qExecStatus {"exists":true}
+[14:13:27] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:27] doDisc_runningCheck {"running":false}
+[14:13:27] qConnectBtn {"exists":true}
+[14:13:27] isConnected {"sparkline":false,"result":false}
+[14:13:27] doDisc_connectedCheck {"connected":false}
+[14:13:27] doDisc_skip_disconnected 
+[14:13:37] workerTick 
+[14:13:37] qStatusBar {"exists":true}
+[14:13:37] qExecStatus {"exists":true}
+[14:13:37] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:37] doDisc_runningCheck {"running":false}
+[14:13:37] qConnectBtn {"exists":true}
+[14:13:37] isConnected {"sparkline":false,"result":false}
+[14:13:37] doDisc_connectedCheck {"connected":false}
+[14:13:37] doDisc_skip_disconnected 
+[14:13:47] workerTick 
+[14:13:47] qStatusBar {"exists":true}
+[14:13:47] qExecStatus {"exists":true}
+[14:13:47] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:47] doDisc_runningCheck {"running":false}
+[14:13:47] qConnectBtn {"exists":true}
+[14:13:47] isConnected {"sparkline":false,"result":false}
+[14:13:47] doDisc_connectedCheck {"connected":false}
+[14:13:47] doDisc_skip_disconnected 
+[14:13:57] workerTick 
+[14:13:57] qStatusBar {"exists":true}
+[14:13:57] qExecStatus {"exists":true}
+[14:13:57] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:13:57] doDisc_runningCheck {"running":false}
+[14:13:57] qConnectBtn {"exists":true}
+[14:13:57] isConnected {"sparkline":false,"result":false}
+[14:13:57] doDisc_connectedCheck {"connected":false}
+[14:13:57] doDisc_skip_disconnected 
+[14:14:07] workerTick 
+[14:14:07] qStatusBar {"exists":true}
+[14:14:07] qExecStatus {"exists":true}
+[14:14:07] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:14:07] doDisc_runningCheck {"running":false}
+[14:14:07] qConnectBtn {"exists":true}
+[14:14:07] isConnected {"sparkline":true,"result":true}
+[14:14:07] doDisc_connectedCheck {"connected":true}
+[14:14:07] doDisc_proceed 
+[14:14:07] runtimeBtnClicked 
+[14:14:07] menuItems {"count":81}
+[14:14:07] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:14:07] menuItemClicked 
+[14:14:07] dialogFound {"pending":true}
+[14:14:07] dialogClickYes {"text":"Да"}
+[14:14:07] execObs_fired {"types":"attributes"}
+[14:14:07] qStatusBar {"exists":true}
+[14:14:07] qExecStatus {"exists":true}
+[14:14:07] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:14:07] doDisc_runningCheck {"running":false}
+[14:14:07] qConnectBtn {"exists":true}
+[14:14:07] isConnected {"sparkline":false,"result":false}
+[14:14:07] doDisc_connectedCheck {"connected":false}
+[14:14:07] doDisc_skip_disconnected 
+[14:14:17] workerTick 
+[14:14:17] qStatusBar {"exists":true}
+[14:14:17] qExecStatus {"exists":true}
+[14:14:17] isRunning {"spinner":false,"text":"check17:10\n      \n      ","result":false}
+[14:14:17] doDisc_runningCheck {"running":false}
+[14:14:17] qConnectBtn {"exists":true}
+[14:14:17] isConnected {"sparkline":false,"result":false}
+[14:14:17] doDisc_connectedCheck {"connected":false}
+[14:14:17] doDisc_skip_disconnected 
