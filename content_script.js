@@ -30,6 +30,7 @@
   addLogBtn();
 
   let pendingDisconnect = false;
+  let workerDisconnected = false;
 
   function dialogWatcher() {
     new MutationObserver(() => {
@@ -42,6 +43,7 @@
       l('dialogClickYes', { text: yesBtn.textContent?.trim() });
       yesBtn.click();
       pendingDisconnect = false;
+      workerDisconnected = true;
     }).observe(document.body, { childList: true, subtree: true, attributeFilter: ['open'] });
     l('dialogWatcherActive');
   }
@@ -103,6 +105,7 @@
   }
 
   function doDisconnect(fromWorker) {
+    if (fromWorker && workerDisconnected) { l('doDisc_skip_workerDone'); return; }
     if (pendingDisconnect) { l('doDisc_skip_pending', { fromWorker }); return; }
 
     const running = isRunning();
@@ -144,6 +147,14 @@
     if (!root) { l('execObs_fail'); return false; }
     new MutationObserver((mutations) => {
       l('execObs_fired', { types: [...new Set(mutations.map(m => m.type))].join(',') });
+      if (workerDisconnected) {
+        const running = root.querySelector('md-circular-progress');
+        const text = root.textContent || '';
+        if (running || text.includes('Выполнение') || text.includes('Executing')) {
+          l('execObs_resetWorkerFlag');
+          workerDisconnected = false;
+        }
+      }
       doDisconnect();
     }).observe(root, { childList: true, subtree: true, attributes: true });
     l('execObs_ok');

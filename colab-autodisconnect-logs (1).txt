@@ -1,0 +1,167 @@
+[14:19:17] dialogWatcherActive 
+[14:19:17] workerCreated 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:17] execObs_deferred 
+[14:19:17] init_firstCheck 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] isRunning_null 
+[14:19:17] doDisc_runningCheck {"running":null}
+[14:19:17] doDisc_skip_running 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:17] qStatusBar {"exists":false}
+[14:19:17] execObs_fail 
+[14:19:18] qStatusBar {"exists":false}
+[14:19:18] execObs_fail 
+[14:19:22] qStatusBar {"exists":true}
+[14:19:22] qExecStatus {"exists":false}
+[14:19:22] execObs_fail 
+[14:19:22] qStatusBar {"exists":true}
+[14:19:22] qExecStatus {"exists":true}
+[14:19:22] execObs_ok 
+[14:19:22] execObs_deferred_success 
+[14:19:27] workerTick 
+[14:19:27] qStatusBar {"exists":true}
+[14:19:27] qExecStatus {"exists":true}
+[14:19:27] isRunning {"spinner":false,"text":"","result":false}
+[14:19:27] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:19:27] doDisc_proceed 
+[14:19:27] runtimeBtnClicked 
+[14:19:27] menuItems {"count":81}
+[14:19:27] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:19:27] menuItemClicked 
+[14:19:37] workerTick 
+[14:19:37] doDisc_skip_pending {"fromWorker":true}
+[14:19:46] execObs_fired {"types":"childList"}
+[14:19:46] doDisc_skip_pending {}
+[14:19:46] execObs_fired {"types":"attributes"}
+[14:19:46] doDisc_skip_pending {}
+[14:19:46] execObs_fired {"types":"attributes"}
+[14:19:46] doDisc_skip_pending {}
+[14:19:47] workerTick 
+[14:19:47] doDisc_skip_pending {"fromWorker":true}
+[14:19:54] execObs_fired {"types":"childList"}
+[14:19:54] doDisc_skip_pending {}
+[14:19:54] execObs_fired {"types":"childList,attributes"}
+[14:19:54] doDisc_skip_pending {}
+[14:19:54] execObs_fired {"types":"attributes"}
+[14:19:54] doDisc_skip_pending {}
+[14:19:54] execObs_fired {"types":"attributes"}
+[14:19:54] doDisc_skip_pending {}
+[14:19:57] workerTick 
+[14:19:57] doDisc_skip_pending {"fromWorker":true}
+[14:20:07] workerTick 
+[14:20:07] doDisc_skip_pending {"fromWorker":true}
+[14:20:17] workerTick 
+[14:20:17] doDisc_skip_pending {"fromWorker":true}
+[14:20:27] workerTick 
+[14:20:27] doDisc_skip_pending {"fromWorker":true}
+[14:20:37] workerTick 
+[14:20:37] qStatusBar {"exists":true}
+[14:20:37] qExecStatus {"exists":true}
+[14:20:37] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:20:37] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:20:37] doDisc_proceed 
+[14:20:37] runtimeBtnClicked 
+[14:20:37] menuItems {"count":81}
+[14:20:37] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:20:37] menuItemClicked 
+[14:20:37] dialogFound {"pending":true}
+[14:20:37] dialogClickYes {"text":"Да"}
+[14:20:47] workerTick 
+[14:20:47] qStatusBar {"exists":true}
+[14:20:47] qExecStatus {"exists":true}
+[14:20:47] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:20:47] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:20:47] doDisc_proceed 
+[14:20:47] runtimeBtnClicked 
+[14:20:47] menuItems {"count":81}
+[14:20:47] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:20:47] menuItemClicked 
+[14:20:57] workerTick 
+[14:20:57] doDisc_skip_pending {"fromWorker":true}
+[14:21:07] workerTick 
+[14:21:07] doDisc_skip_pending {"fromWorker":true}
+[14:21:17] workerTick 
+[14:21:17] doDisc_skip_pending {"fromWorker":true}
+[14:21:27] workerTick 
+[14:21:27] doDisc_skip_pending {"fromWorker":true}
+[14:21:37] workerTick 
+[14:21:37] doDisc_skip_pending {"fromWorker":true}
+[14:21:47] workerTick 
+[14:21:47] qStatusBar {"exists":true}
+[14:21:47] qExecStatus {"exists":true}
+[14:21:47] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:21:47] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:21:47] doDisc_proceed 
+[14:21:47] runtimeBtnClicked 
+[14:21:47] menuItems {"count":81}
+[14:21:47] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:21:47] menuItemClicked 
+[14:21:57] workerTick 
+[14:21:57] qStatusBar {"exists":true}
+[14:21:57] qExecStatus {"exists":true}
+[14:21:57] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:21:57] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:21:57] doDisc_proceed 
+[14:21:57] runtimeBtnClicked 
+[14:21:57] menuItems {"count":81}
+[14:21:57] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:21:57] menuItemClicked 
+[14:22:07] workerTick 
+[14:22:07] doDisc_skip_pending {"fromWorker":true}
+[14:22:17] workerTick 
+[14:22:17] doDisc_skip_pending {"fromWorker":true}
+[14:22:27] workerTick 
+[14:22:27] doDisc_skip_pending {"fromWorker":true}
+[14:22:37] workerTick 
+[14:22:37] doDisc_skip_pending {"fromWorker":true}
+[14:22:47] workerTick 
+[14:22:47] doDisc_skip_pending {"fromWorker":true}
+[14:22:57] workerTick 
+[14:22:57] qStatusBar {"exists":true}
+[14:22:57] qExecStatus {"exists":true}
+[14:22:57] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:22:57] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:22:57] doDisc_proceed 
+[14:22:57] runtimeBtnClicked 
+[14:22:57] menuItems {"count":81}
+[14:22:57] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:22:57] menuItemClicked 
+[14:23:07] workerTick 
+[14:23:07] qStatusBar {"exists":true}
+[14:23:07] qExecStatus {"exists":true}
+[14:23:07] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:23:07] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:23:07] doDisc_proceed 
+[14:23:07] runtimeBtnClicked 
+[14:23:07] menuItems {"count":81}
+[14:23:07] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:23:07] menuItemClicked 
+[14:23:17] workerTick 
+[14:23:17] doDisc_skip_pending {"fromWorker":true}
+[14:23:27] workerTick 
+[14:23:27] doDisc_skip_pending {"fromWorker":true}
+[14:23:37] workerTick 
+[14:23:37] doDisc_skip_pending {"fromWorker":true}
+[14:23:47] workerTick 
+[14:23:47] doDisc_skip_pending {"fromWorker":true}
+[14:23:57] workerTick 
+[14:23:57] doDisc_skip_pending {"fromWorker":true}
+[14:24:07] workerTick 
+[14:24:07] qStatusBar {"exists":true}
+[14:24:07] qExecStatus {"exists":true}
+[14:24:07] isRunning {"spinner":false,"text":"check17:19\n      \n      ","result":false}
+[14:24:07] doDisc_runningCheck {"running":false,"fromWorker":true}
+[14:24:07] doDisc_proceed 
+[14:24:07] runtimeBtnClicked 
+[14:24:07] menuItems {"count":81}
+[14:24:07] menuItemFound {"text":"Отключиться от среды выполнения и удалить ее"}
+[14:24:07] menuItemClicked 
