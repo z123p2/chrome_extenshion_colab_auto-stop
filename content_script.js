@@ -4,6 +4,7 @@
   let loggingEnabled = false;
   let pendingDisconnect = false;
   let workerDisconnected = false;
+  let disconnectTimer = null;
 
   function l(msg, data) {
     if (!loggingEnabled) return;
@@ -63,7 +64,7 @@
   ], { type: 'application/javascript' })));
   worker.onmessage = () => {
     l('workerTick');
-    doDisconnect(true);
+    scheduleDisconnect(true);
   };
 
   function getStatusBar() {
@@ -115,6 +116,41 @@
     return true;
   }
 
+  function checkShouldDisconnect() {
+    const root = getExecRoot();
+    if (!root) { l('checkShouldDisc_noRoot'); return false; }
+    const icon = root.querySelector('md-icon');
+    const hasTime = /\d+:\d+/.test(root.textContent || '');
+    const result = !!icon && hasTime;
+    l('checkShouldDisc', { result, icon: !!icon, hasTime });
+    return result;
+  }
+
+  function scheduleDisconnect(fromWorker) {
+    if (!enabled) { l('schDisc_disabled'); return; }
+    const running = isRunning();
+    l('schDisc', { running, fromWorker, timerActive: !!disconnectTimer });
+    if (running) {
+      if (disconnectTimer) {
+        clearTimeout(disconnectTimer);
+        disconnectTimer = null;
+        l('schDisc_cancelled');
+      }
+      return;
+    }
+    if (disconnectTimer) return;
+    disconnectTimer = setTimeout(() => {
+      disconnectTimer = null;
+      l('schDisc_expired');
+      if (checkShouldDisconnect()) {
+        doDisconnect(fromWorker);
+      } else {
+        l('schDisc_skip_incompleteState');
+      }
+    }, 5000);
+    l('schDisc_scheduled');
+  }
+
   function doDisconnect(fromWorker) {
     if (!enabled) { l('doDisc_skip_disabled'); return; }
     if (fromWorker && workerDisconnected) { l('doDisc_skip_workerDone'); return; }
@@ -137,9 +173,9 @@
     if (!clickRuntimeMenu()) { pendingDisconnect = false; return; }
 
     setTimeout(() => {
-      const items = document.querySelectorAll('.goog-menuitem-content');
-      l('menuItems', { count: items.length });
-      const target = Array.from(items).find(el =>
+      const allItems = document.querySelectorAll('.goog-menuitem-content');
+      l('menuItemsTotal', { count: allItems.length });
+      const target = Array.from(allItems).find(el =>
         el.textContent.includes('Отключиться') || el.textContent.includes('Disconnect')
       );
       if (!target) { l('menuItemNotFound'); pendingDisconnect = false; return; }
@@ -151,7 +187,7 @@
       item.dispatchEvent(new MouseEvent('mouseup', evtOpts));
       item.click();
       l('menuItemClicked');
-    }, 300);
+    }, 1000);
   }
 
   function setupExecutionObserver() {
@@ -167,7 +203,7 @@
           workerDisconnected = false;
         }
       }
-      doDisconnect();
+      scheduleDisconnect();
     }).observe(root, { childList: true, subtree: true, attributes: true });
     l('execObs_ok');
     return true;
@@ -183,5 +219,5 @@
     });
     initObserver.observe(document.body, { childList: true, subtree: true });
   }
-  doDisconnect();
+  scheduleDisconnect();
 })();

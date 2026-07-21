@@ -3,7 +3,7 @@
   "name": "Colab Auto-Disconnect",
   "version": "1.0",
   "description": "Автоматически отключает среду выполнения Colab после завершения всех ячеек",
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab", "downloads"],
   "host_permissions": ["https://colab.research.google.com/*"],
   "action": {
     "default_popup": "popup.html",

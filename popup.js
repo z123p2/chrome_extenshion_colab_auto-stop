@@ -17,12 +17,22 @@ function setTheme(theme) {
 }
 
 function sendToColab(action, data, cb) {
-  chrome.tabs.query({ url: 'https://colab.research.google.com/*' }, (tabs) => {
-    for (const tab of tabs) {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    try {
+      const tab = tabs && tabs[0];
+      if (!tab || !tab.url || !tab.url.includes('colab.research.google.com')) {
+        if (cb) cb(null);
+        return;
+      }
       chrome.tabs.sendMessage(tab.id, { action, ...data }, (response) => {
-        if (chrome.runtime.lastError) continue;
+        if (chrome.runtime.lastError) {
+          if (cb) cb(null);
+          return;
+        }
         if (cb) cb(response);
       });
+    } catch(e) {
+      if (cb) cb(null);
     }
   });
 }
@@ -47,15 +57,17 @@ function updateStatus() {
 }
 
 chrome.storage.sync.get(['enabled', 'loggingEnabled', 'theme'], (r) => {
-  $('enabled').checked = r.enabled !== false;
-  $('loggingEnabled').checked = r.loggingEnabled === true;
-  setTheme(r.theme || 'system');
-  updateStatus();
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-    chrome.storage.sync.get('theme', ({ theme: t }) => {
-      if (t === 'system') document.body.classList.toggle('dark', e.matches);
+  try {
+    $('enabled').checked = r.enabled !== false;
+    $('loggingEnabled').checked = r.loggingEnabled === true;
+    setTheme(r.theme || 'system');
+    updateStatus();
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      chrome.storage.sync.get('theme', ({ theme: t }) => {
+        if (t === 'system') document.body.classList.toggle('dark', e.matches);
+      });
     });
-  });
+  } catch(e) {}
 });
 
 $('enabled').addEventListener('change', () => {
@@ -118,6 +130,19 @@ $('copyLogsBtn').addEventListener('click', () => {
   const text = $('logArea').textContent;
   if (text && text !== 'Логов нет' && text !== 'Загрузка...' && !text.startsWith('Нет активных')) {
     navigator.clipboard.writeText(text);
+  }
+});
+
+$('downloadLogsBtn').addEventListener('click', () => {
+  const text = $('logArea').textContent;
+  if (text && text !== 'Логов нет' && text !== 'Загрузка...' && !text.startsWith('Нет активных')) {
+    const filename = `colab-logs-${new Date().toISOString().slice(0, 19).replace(/[:-]/g, '')}.log`;
+    const blob = new Blob([text], { type: 'application/octet-stream' });
+    const reader = new FileReader();
+    reader.onload = () => {
+      chrome.downloads.download({ url: reader.result, filename, saveAs: true });
+    };
+    reader.readAsDataURL(blob);
   }
 });
 
