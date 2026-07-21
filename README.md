@@ -41,15 +41,15 @@ A permanent `MutationObserver` with `attributeFilter: ['open']` catches the conf
 ## Project structure
 
 ```
-- manifest.json       - Chrome Extension manifest (Manifest V3)
-- content_script.js   - Disconnect logic + logging + message listener
-- popup.html          - Settings popup UI (theme, toggles, logs)
-- popup.js            - Popup logic (storage, messaging, logs display)
-- icons/              - Extension icons
-- README.md           - Documentation (EN)
-- README.ru.md        - Documentation (RU)
-- LICENSE             - MIT License
-- .gitignore
+├── manifest.json       - Chrome Extension manifest (Manifest V3)
+├── content_script.js   - Disconnect logic + logging + message listener
+├── popup.html          - Settings popup UI (theme, toggles, logs)
+├── popup.js            - Popup logic (storage, messaging, logs display)
+├── icons/              - Extension icons
+├── README.md           - Documentation (EN)
+├── README.ru.md        - Documentation (RU)
+├── LICENSE             - MIT License
+└── .gitignore
 ```
 
 ## Technical details
